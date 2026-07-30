@@ -1,4 +1,4 @@
-# DatoCMS plugin: Auto UUID
+# DatoCMS plugin: Auto ID
 
 Automatically generates a UUID for single-line string fields when a record is created, and keeps the value read-only in the DatoCMS editor.
 
@@ -14,9 +14,9 @@ Automatically generates a UUID for single-line string fields when a record is cr
 ### Marketplace
 
 1. Open **Project Settings → Plugins**
-2. Search for **Auto UUID** and install it
+2. Search for **Auto ID** and install it
 3. Open your model field → **Presentation**
-4. Set the field editor to **Auto UUID**
+4. Set the field editor to **Auto ID**
 
 ### Local development
 

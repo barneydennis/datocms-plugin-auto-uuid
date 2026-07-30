@@ -8,7 +8,7 @@ type Props = {
 export default function ConfigScreen({ ctx }: Props) {
   return (
     <Canvas ctx={ctx}>
-      <Section title="Auto UUID">
+      <Section title="Auto ID">
         <p>
           Install this plugin as a <strong>field editor</strong> on any single-line
           string field that should receive an immutable UUID when a record is created.

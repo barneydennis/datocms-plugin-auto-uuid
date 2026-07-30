@@ -8,8 +8,8 @@ connect({
   manualFieldExtensions() {
     return [
       {
-        id: 'autoUuid',
-        name: 'Auto UUID',
+        id: 'autoId',
+        name: 'Auto ID',
         type: 'editor',
         fieldTypes: ['string'],
       },
@@ -19,7 +19,7 @@ connect({
     return render(<ConfigScreen ctx={ctx} />);
   },
   renderFieldExtension(fieldExtensionId, ctx) {
-    if (fieldExtensionId === 'autoUuid') {
+    if (fieldExtensionId === 'autoId') {
       render(<AutoUuidField ctx={ctx} />);
     }
   },

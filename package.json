@@ -1,7 +1,7 @@
 {
-  "name": "datocms-plugin-auto-uuid",
-  "description": "Automatically generates a UUID for string fields when a record is created, and keeps the value read-only in the editor.",
-  "homepage": "https://github.com/bdennis/datocms-plugin-auto-uuid",
+  "name": "datocms-plugin-auto-id",
+  "description": "Automatically generates an ID (UUID) for string fields when a record is created, and keeps the value read-only in the editor.",
+  "homepage": "https://github.com/bdennis/datocms-plugin-auto-id",
   "private": false,
   "version": "0.1.0",
   "author": "Barney Dennis <barney.dennis@gmail.com>",
@@ -15,7 +15,7 @@
     "auto-generate"
   ],
   "datoCmsPlugin": {
-    "title": "Auto UUID",
+    "title": "Auto ID",
     "coverImage": "docs/cover-1200x800.png",
     "previewImage": "docs/preview.png",
     "entryPoint": "dist/index.html",
