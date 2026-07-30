@@ -1,5 +1,5 @@
 {
-  "name": "datocms-plugin-auto-id",
+  "name": "@barneydennis/datocms-plugin-auto-id",
   "description": "Automatically generates an ID (UUID) for string fields when a record is created, and keeps the value read-only in the editor.",
   "homepage": "https://github.com/bdennis/datocms-plugin-auto-id",
   "private": false,
