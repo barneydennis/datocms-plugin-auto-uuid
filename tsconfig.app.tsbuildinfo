@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/vite-env.d.ts","./src/entrypoints/autouuidfield.tsx","./src/entrypoints/configscreen.tsx","./src/lib/formvalues.ts","./src/lib/uuid.test.ts","./src/lib/uuid.ts","./src/utils/render.tsx"],"version":"5.9.3"}

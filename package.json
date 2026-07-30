@@ -1,0 +1,51 @@
+{
+  "name": "datocms-plugin-auto-uuid",
+  "description": "Automatically generates a UUID for string fields when a record is created, and keeps the value read-only in the editor.",
+  "homepage": "https://github.com/bdennis/datocms-plugin-auto-uuid",
+  "private": false,
+  "version": "0.1.0",
+  "author": "Barney Dennis <barney.dennis@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "datocms-plugin",
+    "uuid",
+    "identifier",
+    "readonly",
+    "auto-generate"
+  ],
+  "datoCmsPlugin": {
+    "title": "Auto UUID",
+    "coverImage": "docs/cover-1200x800.png",
+    "previewImage": "docs/preview.png",
+    "entryPoint": "dist/index.html",
+    "permissions": []
+  },
+  "files": [
+    "dist",
+    "docs"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "datocms-plugin-sdk": "^2.2.6",
+    "datocms-react-ui": "^2.2.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "globals": "^15.9.0",
+    "typescript": "^5.5.3",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.4"
+  }
+}
