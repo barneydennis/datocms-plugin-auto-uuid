@@ -1,11 +1,13 @@
 # DatoCMS plugin: Auto ID
 
-Automatically generates a UUID for single-line string fields when a record is created, and keeps the value read-only in the DatoCMS editor.
+Automatically generates a UUID for single-line string fields in the DatoCMS editor, and keeps the value read-only there.
 
 ## Features
 
 - Generates a UUID v4 when a new record is opened in the editor
-- Field is never editable by users, including on the creation screen
+- Field is read-only in the editor, including on the creation screen
+- Does not affect API writes
+- Duplicating a record creates a fresh UUID
 - Works as a field **editor** replacement for `string` fields
 - No plugin permissions required
 
@@ -31,13 +33,15 @@ Then add a private plugin in DatoCMS with entry point `http://localhost:5173`.
 
 Use this plugin on a single-line string field that should act as an immutable identifier, for example `external_id` or `reference_id`.
 
-When a user creates a new record:
+When a user creates a new record in the editor:
 
 1. The plugin assigns a UUID automatically
 2. The field is shown as disabled/read-only
 3. After save, the same UUID remains visible and still cannot be edited
 
-Duplicating a record counts as a new record, so a fresh UUID is generated even if DatoCMS pre-fills the field from the source record.
+Duplicating a record also generates a fresh UUID, even if DatoCMS pre-fills the field from the source record.
+
+API-created or API-updated records are not modified by the plugin.
 
 ## Development
 

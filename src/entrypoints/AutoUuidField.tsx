@@ -1,5 +1,5 @@
 import type { RenderFieldExtensionCtx } from 'datocms-plugin-sdk';
-import { Canvas, TextField } from 'datocms-react-ui';
+import { Canvas, TextInput } from 'datocms-react-ui';
 import { useEffect, useState } from 'react';
 import { getValueAtFieldPath } from '../lib/formValues';
 import { generateUuid, getPersistedFieldValue } from '../lib/uuid';
@@ -25,14 +25,13 @@ export default function AutoUuidField({ ctx }: Props) {
 
   return (
     <Canvas ctx={ctx}>
-      <TextField
+      <TextInput
         id={ctx.fieldPath}
         name={ctx.fieldPath}
-        label={ctx.field.attributes.label}
-        hint={ctx.field.attributes.hint ?? undefined}
         value={value}
         onChange={() => undefined}
-        textInputProps={{ disabled: true, readOnly: true }}
+        disabled
+        readOnly
       />
     </Canvas>
   );
