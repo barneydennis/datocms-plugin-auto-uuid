@@ -3,7 +3,7 @@
   "description": "Automatically generates an ID (UUID) for string fields when a record is created, and keeps the value read-only in the editor.",
   "homepage": "https://github.com/bdennis/datocms-plugin-auto-id",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Barney Dennis <barney.dennis@gmail.com>",
   "license": "MIT",
   "type": "module",
