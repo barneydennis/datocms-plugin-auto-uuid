@@ -7,7 +7,7 @@
     "url": "https://github.com/barneydennis/datocms-plugin-auto-id"
   },
   "private": false,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Barney Dennis <barney.dennis@gmail.com>",
   "license": "MIT",
   "type": "module",
